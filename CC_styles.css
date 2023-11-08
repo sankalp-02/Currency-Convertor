@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,400;1,500&family=Roboto+Slab&display=swap');
+
+* {
+    margin: 0px;
+}
+
+nav {
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    display: flex;
+    font-size: 17px;
+    background-color: rgb(218, 220, 244);
+    width: auto;
+}
+
+nav ul li {
+    list-style: none;
+    padding: 0px 0px 0px 40px;
+}
+
+.web_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: rgb(145, 1, 145);
+    font-size: 33px;
+}
+
+nav ul {
+    display: flex;
+    margin: 23px 0px;
+    /* align-items:flex-start; */
+}
+
+nav ul a {
+    text-decoration: none;
+    color: black;
+}
+
+nav ul a:hover {
+    text-decoration: none;
+    color: rgb(63, 71, 182);
+}
+
+.main_body {
+    min-height: 100vh;
+    max-width: 98vw;
+    margin: auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main_body h1 {
+    margin-top: 60px;
+    font-size: 40px;
+}
+
+.main_body select,
+input {
+    font-size: 22px;
+    margin: 25px;
+    width: 25vw;
+}
+
+label {
+    font-size: 29px;
+    margin-top: 40px;
+}
+
+.main_body h1 {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* .main_body form input[type='number']{
+    background-color: aquamarine;
+} */
+
+form label select input {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    /* display: flex; */
+    margin-left: 12px;
+    padding: 15px 25px 15px 25px;
+    font-size: 22px;
+    background-color: rgb(172, 114, 230);
+    border-radius: 15px;
+    color: aliceblue;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+    margin-top: 80px;
+}
+
+.output {
+    display: none;
+}
+
+.output table {
+    width: 80vw;
+    text-align: center;
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+th {
+    color: rgb(106, 0, 255);
+}
+
+@media(max-width:500px) {
+    body {
+        background-color: rgb(211, 191, 243);
+        /* font-size: 18px; */
+    }
+
+    nav {
+        flex-direction: column;
+        font-size: 14px;
+    }
+
+    nav ul li {
+        margin: 0px 3px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    .main_body {
+        max-width: 96vw;
+    }
+
+    label {
+        font-size: 22px;
+        margin-top: 40px;
+    }
+
+
+    form label select input {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .main_body select,
+    input {
+        font-size: 20px;
+        margin: 15px;
+        width: 28vw;
+    }
+
+}

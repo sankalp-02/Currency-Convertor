@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="CC_styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="web_logo">
+            Currency Convertor
+        </div>
+
+        <ul>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Services</a></li>
+            <li><a href='#'>About Us</a></li>
+            <li><a href="https://www.instagram.com/http.sankalp.in/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" alt="Instagram" height="13px"></a></li>
+        </ul>
+    </nav>
+
+    <div class="main_body">
+
+        <h1>Choose the currency</h1>
+
+        <form action="/action.php" method="get">
+            <label for="amount">Enter the amount: </label>
+            <input type="number" name="amount" min="1" max="10">
+            <label for="Currency">Choose your currency: </label>
+            <select name="Currency">
+                <option value="USD">US Dollar $</option>
+                <option value="INR">Indian Rupee ₹</option>
+                <option value="PNR">Pakistan Rupee Rs</option>
+                <option value="EUR">Euro €</option>
+                <option value="CAD">Canadian Dollar $</option>
+                <option value="AUD">Australian Dollar $</option>
+                <option value="CNH">Chinese renminbi ¥ / 元</option>
+                <option value="GBP">Sterling £</option>
+                <option value="JPY">Japenese Yen ¥ / 円</option>
+            </select>
+
+            <button class="button" type="submit">Convert</button>
+            <!-- <input type="submit" type="Submit"> -->
+        </form>
+        <div class="output">
+            <h2>Here is your converted values in different currencies- </h2>
+            <table>
+                <!-- <caption>Converted Currency Table</caption> -->
+                <thead>
+                    <tr>
+                        <th>Currency</th>
+                        <th>Currency Code</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="CC_script.js"></script>
+    <footer>
+        Copyright &copy; All rights reserved <br>
+        Created by Sankalp❤️
+        <a href="https://www.instagram.com/http.sankalp.in/"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/640px-Instagram_logo_2022.svg.png" alt="Instagram" height="13px"></a>
+    </footer>
+</body>
+
+</html>
